@@ -16,7 +16,7 @@ from pymongo.collection import ObjectId
 # from nltk import word_tokenize,sent_tokenize
 from clickbait import is_clickbait
 
-newsapi = NewsApiClient(api_key='7d125ba012bc447681da91239d255267') #MYAPI-e5aeec0b412a4bb0b7b7d63eaad8bd04
+newsapi = NewsApiClient(api_key='e5aeec0b412a4bb0b7b7d63eaad8bd04') #MYAPI-e5aeec0b412a4bb0b7b7d63eaad8bd04 #OTHERAPI- 7d125ba012bc447681da91239d255267
 linear_clf = pickle.load(open("model.pickle", "rb"))
 
 tfidf_vectorizer = pickle.load(open("vectorizer.pickle", "rb"))
