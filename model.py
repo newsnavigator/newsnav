@@ -21,12 +21,12 @@ linear_clf = pickle.load(open("model.pickle", "rb"))
 
 tfidf_vectorizer = pickle.load(open("vectorizer.pickle", "rb"))
 
-client = MongoClient("mongodb+srv://test:test@cluster0-fyszh.mongodb.net/<dbname>?retryWrites=true&w=majority")
-db = client.test
+#client = MongoClient("mongodb+srv://test:test@cluster0-fyszh.mongodb.net/<dbname>?retryWrites=true&w=majority")
+#db = client.test
 
-db = client.get_database("news_data")
+#db = client.get_database("news_data")
 
-k = db.fake_or_real
+#k = db.fake_or_real
 
 def predict_fake(title, text):
   
