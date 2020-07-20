@@ -21,7 +21,7 @@ linear_clf = pickle.load(open("model.pickle", "rb"))
 
 tfidf_vectorizer = pickle.load(open("vectorizer.pickle", "rb"))
 
-client = MongoClient("mongodb+srv://test:test@cluster0-fyszh.mongodb.net/<dbname>?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://test:test@cluster0.dpcgx.mongodb.net/<dbname>?retryWrites=true&w=majority") #mongodb+srv://test:test@cluster0-fyszh.mongodb.net/<dbname>?retryWrites=true&w=majority
 db = client.test
 
 db = client.get_database("news_data")
